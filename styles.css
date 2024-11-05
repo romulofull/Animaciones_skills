@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+.chart {
+  position: relative; 
+  display: inline-block; 
+  color: black !important;
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+}
+
+.chart figcaption {
+  padding: 50px 60px;
+  width: 68px;
+  height:70px;
+  border: 20px solid #f0f0f0;
+  border-radius: 100px;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #333;
+  position: relative; 
+}
+.skill-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px; 
+  font-style: italic;
+}
+
+.chart img {
+  position: absolute;
+  max-width: 90px;
+  max-height: 85px;
+  background: white;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.react + svg .outer {
+  stroke: lightblue; 
+}
+
+.bootstrap + svg .outer {
+  stroke: purple; 
+}
+
+.typescript + svg .outer {
+  stroke: lightskyblue;
+}
+
+.reactnative + svg .outer {
+  stroke: lightblue;
+}
+.javascript + svg .outer {
+  stroke: yellow; 
+}
+
+.html5 + svg .outer {
+  stroke: red; 
+}
+
+.css3 + svg .outer {
+  stroke: lightskyblue;; 
+}
+.node + svg .outer {
+  stroke: green; 
+}
+.vercel + svg .outer {
+  stroke: black; 
+}
+
+.mongodb + svg .outer {
+  stroke: green; 
+}
+
+.mysql + svg .outer {
+  stroke: lightblue; 
+}
+
+.github + svg .outer {
+  stroke: black; 
+}
+.springboot + svg .outer {
+  stroke: green; 
+}
+
+.javase + svg .outer {
+  stroke: red; 
+}
+.espana + svg .outer {
+  stroke: red; 
+}
+.inglaterra + svg .outer {
+  stroke: blue; 
+}
+.alemania + svg .outer {
+  stroke: black; 
+}
+.chart svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.outer {
+  fill: transparent;
+  stroke: #333;
+  stroke-width: 20;
+  stroke-dasharray: 534;
+  transition: stroke-dashoffset 1s;
+  transform: rotate(-90deg);
+  transform-origin: center center;
+}
+
+.chart:hover .outer {
+  stroke-dashoffset: 534 !important;
+  animation-play-state: paused;
+}
+
+.chart[data-percent="100"] .outer {
+  stroke-dashoffset: 0;
+  animation: show100 2s;
+}
+
+.chart[data-percent="75"] .outer {
+  stroke-dashoffset: 133;
+  animation: show75 2s;
+}
+
+.chart[data-percent="50"] .outer {
+  stroke-dashoffset: 267;
+  animation: show50 2s;
+}
+
+.chart[data-percent="25"] .outer {
+  stroke-dashoffset: 401;
+  animation: show25 2s;
+}
+
+@keyframes show100 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes show75 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 134;
+  }
+}
+
+@keyframes show50 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 267;
+  }
+}
+
+@keyframes show25 {
+  from {
+    stroke-dashoffset: 537;
+  }
+  to {
+    stroke-dashoffset: 401;
+  }
+}
