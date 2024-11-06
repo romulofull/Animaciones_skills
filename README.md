@@ -1,1 +1,1 @@
-<img src="animaciones/proyecto.png">
+<img src="./proyecto.png">
